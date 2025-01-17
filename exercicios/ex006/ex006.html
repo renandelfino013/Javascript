@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>estudos</title>
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      div {
+        background-color: black;
+        color: white;
+        border: 1px solid white;
+        border-radius: 10px;
+        height: 200px;
+        width: 200px;
+        line-height: 200px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="area" 
+    >interaja...</div>
+
+    <script>
+      var a = document.getElementById("area");
+      a.addEventListener('click', clicar)
+      a.addEventListener('mouseenter',entrou )
+      a.addEventListener('mouseleave', saiu)
+      a.addEventListener('mousedown' ,seg)
+
+      function seg(){
+        a.innerText ='segurou'
+        a.style.background ='gray'
+
+      }
+      
+      function clicar() {
+        a.innerText = "clicou";
+        a.style.background ='blue'
+        a.style.color ='black'
+        a.style.fontSize ='1.5em'
+      }
+      function entrou(){
+        a.innerText ='vc passou o mouse'
+        a.style.background='green'
+        a.style.color='black'
+      }
+      function saiu()
+      {
+        a.innerText ='vc tirou o mouse'
+        a.style.color='white'
+        a.style.background ='black'
+        a.style.fontSize ='1em'
+      }
+    </script>
+  </body>
+</html>

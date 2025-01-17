@@ -1,26 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>teste de javascript</title>
     <style>
-        body{
-            background-color: rgba(0, 110, 255, 0.637);
-            color: whitesmoke;
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 1.2em;
-        }
+      body {
+        background-color: rgba(0, 110, 255, 0.637);
+        color: whitesmoke;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.2em;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Estudando DOM</h1>
+    
     <p>aqui vai o resultado</p>
+    
+    
     <p>aaaaaaaaaa</p>
+    
+
+
     <div>clique em mim</div>
+    
+
+    <div class="get">get by id</div>
+    
+    <p>get by name</p>
+    
+
+    <p class="get">get by classname</p>
+
+    <p class="quer">queryselector</p>
+
+
     <script>
-        var p1 = document.getElementsByTagName ('p') [0]
-        document.write(p1.innerHTML)
+      
+      var p2 = document.querySelector('p.quer') 
+      p2.style.background = 'black'
+      
+      
+      
+      var p1 = document.querySelector("p.get");
+      document.write(p1.innerHTML);
+      p1.style.textAlign = "center";
+      p1.style.background = "black";
+
+      var body = document.body;
+
+      body.style.background = "pink";
+
+      var div = document.querySelectorAll("get");
+
+      div.style.background = "black";
+
+      var clas = document.querySelectorAll("div.get");
+
+      clas.style.background = "black";
     </script>
-</body>
+  </body>
 </html>

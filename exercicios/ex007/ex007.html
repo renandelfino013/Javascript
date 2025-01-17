@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+            font-family: 'Courier New', Courier, monospace;
+            
+        }
+        #res{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.2em;
+            background-color: gray;
+            
+        }
+    </style>
+  </head>
+  <body>
+    <h1>somando</h1>
+    <input type="number" name="number" id="txtn1" />
+    +
+    <input type="number" name="" id="txtn2" />
+    <input type="button" value="somar" onclick="somar()" />
+    <div id="res">resultado:</div>
+    <script>
+      function somar() {
+        var textn1 = document.getElementById("txtn1");
+        var textn2 = document.getElementById("txtn2");
+        var res = document.getElementById("res")
+
+        var n1 = Number(textn1.value)
+        var n2 = Number(textn2.value)
+        var divres = n1 + n2;
+        res.innerText = `a soma entre ${n1} e ${n2} da um resultado de ${divres}`;
+      }
+    </script>
+  </body>
+</html>
