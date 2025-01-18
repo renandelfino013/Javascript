@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nacionalidade</title>
+    <style>
+      body {
+        background-color: #333;
+        color: #fff;
+        font-family: Arial, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>teste de Nacionalidade</h1>
+    <label for="txtna"> Nacionalidade</label>
+    <input type="text" name="txtna" id="txtna" required />
+    <input type="submit" value="enviar" id="env" onclick="env()" />
+    <div id="res"></div>
+
+    <script>
+      var res = document.getElementById("res");
+      var txtna = document.getElementById("txtna");
+      function env() {
+        if (txtna.value === 'brasileiro') {
+          
+          res.innerHTML = `Você é ${txtna.value} seja bem vindo`;
+        } else {
+            res.innerHTML = `você é Estrangeiro, não é bem vindo aqui`;
+        }
+      }
+    </script>
+  </body>
+</html>
