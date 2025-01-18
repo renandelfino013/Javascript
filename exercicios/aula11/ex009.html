@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+  </head>
+  <body>
+    
+        <label for="vel">km/h</label>
+        <input
+          type="text"
+          name="vel"
+          id="txtn"
+          placeholder="velocidade do seu veiculo"
+        />
+        <input type="submit" value="verificar" onclick="velf()">
+        <p id="res"></p>
+
+        
+      
+    <script>
+       function velf(){
+           var txtn = document.getElementById('txtn')
+           var vel =  Number(txtn.value)
+           var res = document.getElementById('res')
+           res.innerHTML = `sua velocidade é de <strong>${vel}</strong>`
+           if(vel>=60){
+            res.innerHTML =+`vc esta <strong>Multado</strong> por ecesso de velocidade`
+           }
+       }
+    </script>
+  </body>
+</html>
