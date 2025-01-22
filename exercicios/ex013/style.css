@@ -19,11 +19,12 @@ header {
   text-align: center;
   color: white;
   font-size: 1.5em;
-  padding: 20px;
-  margin-bottom: 20px;
+  padding:10px;
 }
 header > h1{
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    
+    margin-bottom: 10px;
 }
 main{
     position: absolute;
@@ -42,20 +43,44 @@ footer{
     bottom: 0;
     width: 100%;
     text-align: center;
-    padding: 10px;
+    padding: 2px;
     color: white;
     background-color: rgba(41, 80, 255, 0.3);
 }
+input#botao{
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+input#qntsanos{
+  max-width: 175px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
 
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+#resp{
+  text-align: center;
+  margin-bottom:10px ;
+  font-weight: bold;
+}
 div{
     max-height: 50%;
 }
 img{
+    
+    max-height: 300px;
     width: 100%;
-    height: auto;
-    max-width: 100%;
     display: block;
     margin-bottom: 20px;
-    object-fit: cover;
+    border-radius: 45%;
     size: 50%;
+    object-fit: cover;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
 }

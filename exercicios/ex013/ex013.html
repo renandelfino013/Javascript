@@ -12,16 +12,16 @@
     </header>
     <main>
         <label for="qntsanos">Ano de Nascimento</label>
-        <input type="text" name="qntsanos" id="qntsanos" placeholder="Digite o ano de nascimento">
+        <input type="text" name="qntsanos" id="qntsanos" placeholder="Digite o ano de nascimento" >
         
         <p>
             <label for="male">Sexo:</label>
-            <input type="radio" name="sexo" id="male">Masculino
+            <input required type="radio" name="sexo" id="male">Masculino
             <label for="female"></label>
-            <input type="radio" name="sexo" id="female">Feminino
+            <input required type="radio" name="sexo" id="female">Feminino
         </p>
-        <p><input type="submit" value="Verificar" onclick="verificar()"></p>
-        <p id="resp"></p>
+        <p><input type="submit" value="Verificar" id="botao"     onclick="verificar()"></p>
+        <p id="resp">...</p>
         <div>
             <img src="" alt="" id="imagen">
         </div>
