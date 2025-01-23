@@ -37,6 +37,8 @@ top: 50%;
     border-radius: 10px;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
     max-width: 500px;
+    overflow: auto  ;
+    max-height: 500px;
     
 
 }
