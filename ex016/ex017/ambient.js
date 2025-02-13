@@ -7,4 +7,4 @@ console.log(num)
 }*/
 for (pos in num){
     console.log ( `a posição ${pos} tem o value de ${num[pos]} `)
-}
+}                                                                       
